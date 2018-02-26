@@ -1,0 +1,14 @@
+<group>
+	<axis>0</axis>
+	<grid>0</grid>
+	<Auto_Update>1</Auto_Update>
+	<Display_Mode>0</Display_Mode>
+<group/>
+	<wire_frame>0</wire_frame>
+	<auto_update>1</auto_update>
+	<param_A>4</param_A>
+	<param_B>1400</param_B>
+	<param_C>10</param_C>
+	<Amplitude>24</Amplitude>
+	<Frequency>0.05</Frequency>
+</group>
