@@ -53,7 +53,7 @@ void Artifact::draw(bool wireFrame){
     //of3dPrimitive inherits from ofNode, this allows
     //transformations to global position of Mesh
     primitive3d.setPosition(position);
-    primitive3d.setOrientation(rotation);
+    primitive3d.setOrientation(rotation);//ofVec3f not working if anyone wants to figure out Quaternions
     primitive3d.setScale(scale);
     
     //perform ofNode transforms

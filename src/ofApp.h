@@ -4,6 +4,7 @@
 #include "Artifact.h"
 #include "ofxGui.h"
 #include "Plane.h"
+#include "Model.h"
 
 class ofApp : public ofBaseApp{
 
@@ -36,5 +37,6 @@ class ofApp : public ofBaseApp{
 
         ofEasyCam cam;
         Plane plane;
+        Model model;
     
 };

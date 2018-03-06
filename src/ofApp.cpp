@@ -9,6 +9,11 @@ void ofApp::setup(){
     plane.setup();
     plane.updatePosition(ofVec3f(-100,-100,0));
     
+    model.setup("tree.obj");
+    model.updatePosition(ofVec3f(-20,-20,0));
+    model.updateScale(ofVec3f(20,20,20));
+//    model.updateRotation(ofVec3f(0,0,0));//ofVec3f not working if anyone wants to figure out Quaternions
+    
     //GUI
     gui.setup();
     
@@ -39,6 +44,7 @@ void ofApp::setup(){
 void ofApp::update(){
     if(auto_update){
         plane.update();
+        model.update();
     }
 }
 
@@ -60,6 +66,7 @@ void ofApp::draw(){
     
     //wire_frame toggles render mode
     plane.draw(wire_frame);
+    model.draw(wire_frame);
     
     cam.end();
     
